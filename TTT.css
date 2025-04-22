@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin; 
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.box {
+    height:18vmin;
+    width:18vmin;
+    border: none;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); */
+    font-size: 8vmin;
+    /* color: #b0413e; */
+    background-color: #548687;
+
+}
+
+.reset , .restart , #submit {
+    padding: 1rem;
+    font-size: 1.25 rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.reset , .restart , #submit:hover{
+    cursor: pointer;
+    background-color: rgb(45, 45, 45);
+}
+
+#msg {
+    font-size: 5vmin;
+    color: white;
+}
+
+.msg-container {
+    height: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(184, 47, 47);
+}   
+
+.hide {
+    display: none !important;
+}
+
+.info {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 90vh;
+    font-weight: 400;
+}
+
+.info p, .info input {
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+}
+
+h2 {
+    background-color: lightcyan;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#win-line {
+    position: absolute;
+    height: 6px;
+    width: 58vmin;
+    background-color: rgb(0, 0, 0);
+    transform-origin: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    z-index: 10;
+  }
+  
+  /* Win line styles */
+  .win-0 { top: 25%; transform: translate(-50%, -50%) rotate(0deg); }
+  .win-1 { top: 50%; transform: translate(-50%, -50%) rotate(0deg); }
+  .win-2 { top: 75%; transform: translate(-50%, -50%) rotate(0deg); }
+  
+  .win-3 { left: 25%; transform: translate(-50%, -50%) rotate(90deg); }
+  .win-4 { left: 50%; transform: translate(-50%, -50%) rotate(90deg); }
+  .win-5 { left: 75%; transform: translate(-50%, -50%) rotate(90deg); }
+  
+  .win-6 { transform: translate(-50%, -50%) rotate(45deg); }
+  .win-7 { transform: translate(-50%, -50%) rotate(-45deg); }
+  
+
+.one, .two, .four, .five, .seven, .eight {
+    border-right: 5px solid white;
+}
+
+.one, .two, .four, .five, .three, .six {
+    border-bottom: 5px solid white;
+}
+
+
+  

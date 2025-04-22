@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="TTT.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <h2 class="turn hide"> Player</h2>
+    <div class="info">
+        <!-- <h1>Wecome to Tic Tac Toe Game</h1> -->
+        <p>Enter Player 1 Name:</p>
+        <input type="text" id="p1Name" placeholder="Player 1 Name"/>
+        <p>Enter Player 2 Name:</p>
+        <input type="text" id="p2Name" placeholder="Player 2 Name"/>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="msg-container hide">
+        <p id = "msg">Winner</p>
+        <!-- <button class="restart"> Restart Game</button> -->
+    </div>
+
+    <main>
+        
+        <div class="container">
+            <div id="win-line" class="hide"></div>
+            <div class="game hide">
+                <button class="box one"></button>
+                <button class="box two"></button>
+                <button class="box three"></button>
+                <button class="box four"></button>
+                <button class="box five"></button>
+                <button class="box six"></button>
+                <button class="box seven"></button>
+                <button class="box eight"></button>
+                <button class="box nine"></button>
+                <button class="reset"> Reset Game</button>
+                <button class="restart"> Restart Game</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="TTT.js"></script>
+</body>
+</html>
